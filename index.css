@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --orange: #f56b03;
+    --red: #ed3a1a;
+    --btn-hover: #df7a15;
+}
+
+body {
+    background-color: #fff;
+    background-image: url("./assets/images/bg-decore.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* height: 100vh; */
+}
+
+.section {
+    display: flex;
+}
+
+.header-conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-logo {
+    margin: 30px 50px;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-list {
+    margin: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-btn {
+    margin: 30px;
+    background-color: var(--orange);
+    border-radius: 5px;
+    height: 60px;
+    width: 170px;
+    color: #fff;
+
+
+}
+
+.sign-up {
+    border-radius: 5px;
+    border: none;
+    width: 102px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.sign-up:hover {
+    background-color:var(--btn-hover);
+}
+
+.login {
+    border-radius: 5px;
+    border: none;
+    width: 102px;
+    height: 40px;
+    cursor: pointer;
+
+
+}
+
+.login:hover {
+    background-color:var(--btn-hover);
+
+
+}
+
+.nav-select {
+    width: 40px;
+    height: 30px;
+    margin: 30px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+
+.first-screen-section {
+    background-image: url("./assets/images/girl-on-suitcase.png");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+}
+
+.conteiner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-screen-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 550px;
+    margin: 50px;
+
+}
+
+h1 {
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.big {
+    font-size: 84px;
+    font-weight: 700;
+}
+
+.first-screen-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.find-out-more {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 170px;
+    color: #fff;
+}
+
+.find-out-more:hover{
+    background-color:var(--btn-hover);
+}
+
+.notext {
+    background-color: var(--red);
+
+    height: 52px;
+    width: 52px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.notext::before {
+    content: "";
+    border: 10px solid transparent;
+    border-right: none;
+    border-left: 10px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.notext:hover{
+
+  background-color: var(--orange);
+}
+.offer-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.services-screen-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.services-content {
+    width: 180px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 36px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.services-content:hover {
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 36px;
+}
+
+.services-content::before {
+    display: none;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url(./assets/images/Rectangle\ 157.svg);
+    position: absolute;
+    z-index: -1;
+    bottom: -33px;
+    left: -35px;
+}
+
+.services-content:hover::before {
+    display: block;
+}
+
+.services-img {
+    width: 77px;
+    height: 66px;
+    margin-bottom: 20px;
+
+}
+
+.category {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.h2 {
+    font-size: 50px;
+
+}
+
+.h3 {
+    font-size: 20px;
+}
+
+.services-par {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.destinations-section {
+    margin-top: 40px;
+
+}
+
+.destinations-conteiner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+}
+
+.top-destinations {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.destinations-pic-section {
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+}
+
+.destinations-pic-content {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 250px;
+    margin-right: 40px;
+    border-radius: 36px;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.destinations-pic-content:hover {
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 36px;
+}
+
+.destination-picture-italy {
+    width: 220px;
+    height: 250px;
+    background-size: cover;
+    background-image: url("./assets/images/rome-pic.png");
+    background-size: 100%;
+}
+
+.destination-picture-london {
+
+    width: 220px;
+    height: 250px;
+    background-size: cover;
+    background-image: url("./assets/images/london-pic.png");
+    background-size: 100%;
+}
+
+.destination-picture-europe {
+    width: 220px;
+    height: 250px;
+    background-size: cover;
+    background-image: url("./assets/images/europe-pic.png");
+}
+
+.town-price {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 20px;
+}
+
+.trip-days {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+
+}
+
+.nav-arrow {
+    margin-right: 20px;
+}
+
+.town-price {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.subscribe-section-conteiner{
+    margin-top: 60px;
+ width: 1200px;
+margin-left: auto;
+margin-right: auto;
+height: 300px;
+}
+.subscribe-content{
+    display: flex;
+    width: 1100px;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/light-back.svg");
+    position: relative;
+    margin-left: 50px;
+}
+.subscribe-content::after{
+    position: absolute;
+   background-image: url("./assets/images/subscride\ arrow.svg");
+   background-size: cover;
+   content: "";
+    width: 50px;
+    height: 50px;
+    top: -5px;
+    right: -5px;
+  
+
+}
+.subscribe-content::before{
+    position: absolute;
+    background-image: url("./assets/images/rings2.svg");
+    background-size: cover;
+    content: "";
+    width: 300px;
+    height: 200px;
+    bottom: 0;
+    left: 15px;
+    z-index: -1;
+  
+
+}
+.field{
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+}
+
+.email{
+    height: 60px;
+    width: 420px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    padding-left: 15px;
+}
+.subscribe-btn{
+background-color: var(--orange);
+border: none;
+border-radius: 5px;
+height: 60px;
+width: 170px;
+color: #fff;
+}
+.subscribe-btn:hover{
+background-color:var(--btn-hover);
+}
+
+.h-subscribe-conteiner{
+    margin: 30px;
+    margin-bottom: 130px;
+    font-size: 33px;
+
+}
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-conteiner{
+    
+    width: 1200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.footer-content{
+  
+    width: 900px; 
+    display: flex;
+    justify-content: space-around; 
+   
+}
+.bold{
+    font-weight: bold;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    width: 215px;
+    height: 54px;
+}
+
+.social-icon:hover{
+    background-color: #f3e7f36b;
+    border-radius: 16px;
+}
+.footer-logo{
+width: 115px;
+height: 34px;
+margin-left: 50px;
+padding-left: 80px;
+cursor: pointer;
+}
